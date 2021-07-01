@@ -26,7 +26,7 @@ The figure below details an example how the obtained data could be analyzed and 
 * The original ARTIC primer panel - https://github.com/artic-network/artic-ncov2019
 
 * MN908947.3 assembly and annotation:
-** [Ensembl](https://covid-19.ensembl.org/index.html)
-** [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2/)
+    * [Ensembl](https://covid-19.ensembl.org/index.html)
+    * [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2/)
 
 * https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/
