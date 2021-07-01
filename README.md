@@ -29,4 +29,4 @@ The figure below details an example how the obtained data could be analyzed and 
     * [Ensembl](https://covid-19.ensembl.org/index.html)
     * [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2/)
 
-* https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/
+* [Our product page](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/)
