@@ -21,10 +21,12 @@ The figure below details an example how the obtained data could be analyzed and 
 
 * Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M (2020) Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS ONE 15(9): [e0239403](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403)
 
-* https://github.com/ItokawaK/Alt_nCov2019_primers - Contains the tools outlined in the example workflow
+* Tools by Itokawa *et. al* in the example workflow - https://github.com/ItokawaK/Alt_nCov2019_primers
 
-* https://github.com/artic-network/artic-ncov2019 - The original ARTIC primer pamel
+* The original ARTIC primer panel - https://github.com/artic-network/artic-ncov2019
 
-* MN908947.3 assembly and annotation on [Ensembl](https://covid-19.ensembl.org/index.html)
+* MN908947.3 assembly and annotation:
+** [Ensembl](https://covid-19.ensembl.org/index.html)
+** [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2/)
 
-* [Lexogen product page](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/)
+* https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/
