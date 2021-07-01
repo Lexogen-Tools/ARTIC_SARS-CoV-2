@@ -6,12 +6,12 @@ This repository contains resources and information related to the [QuantSeq Flex
 
 
 ## Data analysis
-The figure below details an example how the obtained data could be analyzed and is based on tools and a workflow published by [Itokawa et. al](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). We have futhermore included a basic example script [here](example_workflow/example_workflow.sh)
+The figure below details an example how the obtained data could be analyzed and is based on tools and a workflow published by [Itokawa et. al](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). We have futhermore included a basic example script [here](example_workflow/example_workflow.sh).
 
 ![analysis workflow](Lexogen_SARS-CoV-2_Workflow-Data_Analysis.png)
 
 
-## Content overview
+## Repository content
 
 1. [primers](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/primers) - The primer sequences, binding positions and amplicion ranges with respect to the MN908947.3 genome assembly.
 
