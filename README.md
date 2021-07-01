@@ -1,4 +1,4 @@
-# Lexogen - QuantSeq Flex ARTIC primer set for SARS-Cov2 genome sequencing
+# QuantSeq Flex ARTIC primer set for SARS-Cov2 genome sequencing
 
 ## Introduction 
 
