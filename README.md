@@ -2,12 +2,11 @@
 
 ## Introduction 
 
-This repository contains resources and information related to the QuantSeq Flex ARTIC primer set. 
-The primers in this set are based on the published, improved sequences (version N1) by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). See also [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers) for more information and the original sequences.
+This repository contains resources and information related to the [QuantSeq Flex ARTIC primer set](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/). The primers in this set are based on the published, improved sequences ([version N1](https://github.com/ItokawaK/Alt_nCov2019_primers/tree/master/Primers/ver_N1)) by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). See also [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers) for more information and the original sequences.
 
 
 ## Data analysis
-The figure below details an example how the obtained data could be analyzed and is based workflow and tools published by [Itokawa et. al](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). We have futhermore included a basic example script [here](example_workflow/example_workflow.sh)
+The figure below details an example how the obtained data could be analyzed and is based on tools and a workflow published by [Itokawa et. al](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). We have futhermore included a basic example script [here](example_workflow/example_workflow.sh)
 
 ![analysis workflow](Lexogen_SARS-CoV-2_Workflow-Data_Analysis.png)
 
@@ -27,3 +26,5 @@ The figure below details an example how the obtained data could be analyzed and 
 * https://github.com/artic-network/artic-ncov2019 - The original ARTIC primer pamel
 
 * MN908947.3 assembly and annotation on [Ensembl](https://covid-19.ensembl.org/index.html)
+
+* [Lexogen product page](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/)
