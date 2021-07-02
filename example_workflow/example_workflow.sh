@@ -46,7 +46,8 @@ example_wf (){
 
     # only count the non primer trimmed filed as the annotation file used 
     # contains the primer binding sites
-    featureCounts -a $primer_file -F SAF -o $out/${fq1%.fastq.gz}.counts -p -M --fraction -s 1 $out/${fq1%_R1.fastq.gz}.bam
+    # TODO: this is not yet working, needs to be fixed.
+    featureCounts -a $fc_annotation -F SAF -o $out/${fq1%.fastq.gz}.counts -p -M --fraction -s 1 $out/${fq1%_R1.fastq.gz}.bam
 
     # here we plot the coverage. 
     # if you want the amplicon ranges and potential mutations visualized you need
