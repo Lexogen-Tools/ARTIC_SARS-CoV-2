@@ -1,0 +1,14 @@
+# You can use this file to create a conda environment for this workflow
+# conda env create -f environment.yml
+name: artic_sars-cov2
+channels:
+  - defaults
+  - bioconda
+dependencies:
+  - bioconda::bwa=0.7 
+  - bioconda::subread=2.0
+  - bioconda::samtools
+  - python >= 3.0
+  - numpy
+  - matplotlib
+  - pandas
