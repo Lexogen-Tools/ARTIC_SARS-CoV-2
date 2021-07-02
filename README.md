@@ -17,7 +17,7 @@ The figure below details an example how the obtained data could be analyzed and 
 
 2. [example_workflow](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/example_workflow) - A showcase script on how to perform data analysis. 
 
-## Refereces
+## References
 
 * Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M (2020) Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS ONE 15(9): [e0239403](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403)
 
