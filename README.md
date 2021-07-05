@@ -18,10 +18,13 @@ The repository is split into two parts:
    - Features a showcase script and some resources on how one could perform analysis of the obtained data. 
 
 ## Data analysis - an example workflow
-As mentioned above, the [example_workflow](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/example_workflow) folder contains an example script as well as serveral other resources that will make it easier to get you started with your data analysis. This script implements the follwowing steps and is based among others on tools and a workflow published by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403).
+As mentioned above, the [example_workflow](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/example_workflow) folder contains an example script as well as serveral other resources that will make it easier to get you started with your data analysis. This script implements the following steps and is based among others on tools and a workflow published by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403).
 
 ### The workflow
-The basic steps of the analysis are outlined below. There is no need for adapter trimming if you use Illumina sequencers. This is as the shortest amplicon should be 380 bp, while Illumina sequencers only allow paired-end sequencing up to 300 bp. The workflow does inlcude a position based primer trimming step though. 
+The basic steps of the analysis are outlined below. There is no need for adapter trimming if you use Illumina sequencers. This is because the shortest amplicon should be 380 bp, while Illumina sequencers only allow paired-end sequencing up to 300 bp. The workflow does include a position based primer trimming step though.
+If you are using our [unique dual indicies](https://www.lexogen.com/indexing/) for barcoding also check out our [demultiplexing tool](https://github.com/Lexogen-Tools/idemuxcpp).
+
+
 ![analysis workflow](Lexogen_SARS-CoV-2_Workflow-Data_Analysis.png)
 
 
@@ -37,7 +40,7 @@ example_workflow
 ```
 
 1. [environment.yml](example_workflow/environment.yml)
-   - A yaml file to install the required dependecies into a conda environment.
+   - A yaml file to install the required dependencies into a conda environment.
    - This can easily be done by running the command ```conda env create -f environment.yml```
    - See [here](https://astrobiomike.github.io/unix/conda-intro) for an excellent tutorial on what conda is.
 2. [example_workflow.sh](example_workflow/example_workflow.sh)
