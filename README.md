@@ -48,7 +48,7 @@ example_workflow
    - A simple annotation format file that can be used to quantify the amplicons with [featureCounts](http://subread.sourceforge.net/)
    - This file has been generated from the orginal resource published by Itokawa et. al 2020. See [here](https://doi.org/10.1371/journal.pone.0239403.s003) for the original file 
 4. [MN908947.3](example_workflow/MN908947.3)
-   - The [MN908947.3](https://www.ncbi.nlm.nih.gov/nuccore/MN908947) genome assembly indexed for [BWA](https://github.com/lh3/bwa) 0.7
+   - A folder containing the [MN908947.3](https://www.ncbi.nlm.nih.gov/nuccore/MN908947) genome assembly indexed for [BWA](https://github.com/lh3/bwa) 0.7
 
 
 ## References
