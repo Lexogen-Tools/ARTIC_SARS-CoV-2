@@ -38,7 +38,7 @@ example_workflow
 
 1. [environment.yml](example_workflow/environment.yml)
    - A yaml file to install the required dependecies into a conda environment.
-   - This can easily be done by running the command ```conda env create -f environment.yml``
+   - This can easily be done by running the command ```conda env create -f environment.yml```
    - See [here](https://astrobiomike.github.io/unix/conda-intro) for an excellent tutorial on what conda is.
 2. [example_workflow.sh](example_workflow/example_workflow.sh)
    - The above shown example workflow implemented in bash
