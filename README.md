@@ -18,7 +18,7 @@ The repository is split into two parts:
    - Features a showcase script and some resources on how one could perform analysis of the obtained data. 
 
 ## Data analysis - an example workflow
-As mentioned above, the [example_workflow](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/example_workflow) folder contains an example script as well as serveral other resources that will make it easier to get you started with your data analysis. This script implements the follwowing steps and is based on tools and a workflow published by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403).
+As mentioned above, the [example_workflow](https://github.com/Lexogen-Tools/ARTIC_SARS-CoV-2/example_workflow) folder contains an example script as well as serveral other resources that will make it easier to get you started with your data analysis. This script implements the follwowing steps and is based among others on tools and a workflow published by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403).
 
 ### The workflow
 The basic steps of the analysis are outlined below. There is no need for adapter trimming if you use Illumina sequencers. This is as the shortest amplicon should be 380 bp, while Illumina sequencers only allow paired-end sequencing up to 300 bp. The workflow does inlcude a position based primer trimming step though. 
