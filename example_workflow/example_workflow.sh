@@ -29,31 +29,30 @@ fq_read2="some_file_R2.fastq.gz"
 example_wf (){
     fq1=$1
     fq2=$2
-    out=$output_dir
     mkdir -p $output_dir
     # first pass aligment required for primer trimming as in the paper
-    bwa mem -t $threads $index_bwa $fq1 $fq2 | tee $out/${fq1%_R1.fastq.gz}.sam | python $trimming_script --gzip $primer_file ${fq1%_R1.fastq.gz}_trimmed.fastq ${fq2%.fastq.gz}_trimmed.fastq
+    bwa mem -t $threads $index_bwa $fq1 $fq2 | tee $output_dir/${fq1%_R1.fastq.gz}.sam | python $trimming_script --gzip $primer_file $output_dir/${fq1%_R1.fastq.gz}_trimmed.fastq $output_dir/${fq2%.fastq.gz}_trimmed.fastq
     # second pass alignment with the primer trimmed reads
-    bwa mem -t $threads $index_bwa ${fq1%_R1.fastq.gz}_trimmed.fastq.gz ${fq2%.fastq.gz}_trimmed.fastq.gz > $out/${fq1%_R1.fastq.gz}_trimmed.sam
+    bwa mem -t $threads $index_bwa $output_dir/${fq1%_R1.fastq.gz}_trimmed.fastq.gz $output_dir/${fq2%.fastq.gz}_trimmed.fastq.gz > $output_dir/${fq1%_R1.fastq.gz}_trimmed.sam
     # sort and convert to bam
-    samtools sort $out/${fq1%_R1.fastq.gz}.sam  > $out/${fq1%_R1.fastq.gz}.bam
-    samtools index $out/${fq1%_R1.fastq.gz}.bam   
-    rm -v $out/${fq1%_R1.fastq.gz}.sam
+    samtools sort $output_dir/${fq1%_R1.fastq.gz}.sam  > $output_dir/${fq1%_R1.fastq.gz}.bam
+    samtools index $output_dir/${fq1%_R1.fastq.gz}.bam
+    rm -v $output_dir/${fq1%_R1.fastq.gz}.sam
 
-    samtools sort $out/${fq1%_R1.fastq.gz}_trimmed.sam  > $out/${fq1%_R1.fastq.gz}_trimmed.bam
-    samtools index $out/${fq1%_R1.fastq.gz}_trimmed.bam
-    rm -v $out/${fq1%_R1.fastq.gz}.sam
+    samtools sort $output_dir/${fq1%_R1.fastq.gz}_trimmed.sam  > $output_dir/${fq1%_R1.fastq.gz}_trimmed.bam
+    samtools index $output_dir/${fq1%_R1.fastq.gz}_trimmed.bam
+    rm -v $output_dir/${fq1%_R1.fastq.gz}_trimmed.sam
 
     # only count the non primer trimmed filed as the annotation file used 
     # contains the primer binding sites
     # TODO: this is not yet working, needs to be fixed.
-    featureCounts -a $fc_annotation -F SAF -o $out/${fq1%.fastq.gz}.counts -p -M --fraction -s 1 $out/${fq1%_R1.fastq.gz}.bam
+    featureCounts -a $fc_annotation -F SAF -o $output_dir/${fq1%.fastq.gz}.counts -p -M --fraction -s 1 $output_dir/${fq1%_R1.fastq.gz}_trimmed.bam
 
     # here we plot the coverage. 
     # if you want the amplicon ranges and potential mutations visualized you need
     # to provide it with a bed and fasta file.
     # see https://github.com/ItokawaK/Alt_nCov2019_primers
-    python $coverage_script -i $out/${fq1%_R1.fastq.gz}.bam -o $out/${fq1%_R1.fastq.gz}.pdf
+    python $coverage_script -i $output_dir/${fq1%_R1.fastq.gz}_trimmed.bam -o $output_dir/${fq1%_R1.fastq.gz}.pdf
 }
 
 example_wf $fq_read1 $fq_read2
