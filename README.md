@@ -1,6 +1,6 @@
 # QuantSeq Flex ARTIC primer set for SARS-Cov2 genome sequencing
 
-This repository contains resources and information related to the [QuantSeq Flex ARTIC primer set](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/). The primers in this set are based on the published, improved sequences ([version N1](https://github.com/ItokawaK/Alt_nCov2019_primers/tree/master/Primers/ver_N1)) by [Itokawa et. al 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403). 
+This repository contains resources and information related to the [QuantSeq Flex ARTIC primer set](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/). The primers in this set are based on the published, improved sequences ([version N1](https://github.com/ItokawaK/Alt_nCov2019_primers/tree/master/Primers/ver_N1)) by [Itokawa et. al 2020](https://doi.org/10.1371/journal.pone.0239403). 
 
 See this [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers) for more information and the original sequences.
 
@@ -56,7 +56,7 @@ example_workflow
 
 ## References
 
-* Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M (2020) Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS ONE 15(9): [e0239403](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239403)
+* Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M (2020) Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS ONE 15(9): [e0239403](https://doi.org/10.1371/journal.pone.0239403)
 
 * Tools by Itokawa *et. al* used by the example workflow - https://github.com/ItokawaK/Alt_nCov2019_primers
 
