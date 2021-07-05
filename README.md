@@ -41,12 +41,12 @@ example_workflow
    - This can easily be done by running the command ```conda env create -f environment.yml```
    - See [here](https://astrobiomike.github.io/unix/conda-intro) for an excellent tutorial on what conda is.
 2. [example_workflow.sh](example_workflow/example_workflow.sh)
-   - The above shown example workflow implemented in bash
+   - The above shown example workflow is implemented in bash
    - The script contains several variables at the beginning that might need to be edited. 
-   - If you want to run this script make sure you downloaded the required scripts from [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers)
+   - If you want to run this script make sure you downloaded the required scripts from [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers).
 3. [fc_annotation.saf](example_workflow/fc_annotation.saf)
    - A simple annotation format file that can be used to quantify the amplicons with [featureCounts](http://subread.sourceforge.net/)
-   - This file has been generated from the orginal resource published by Itokawa et. al 2020. See [here](https://doi.org/10.1371/journal.pone.0239403.s003) for the original file 
+   - This file has been generated from the orginal resource published by Itokawa et. al 2020. See [here](https://doi.org/10.1371/journal.pone.0239403.s003) for the original file.
 4. [MN908947.3](example_workflow/MN908947.3)
    - A folder containing the [MN908947.3](https://www.ncbi.nlm.nih.gov/nuccore/MN908947) genome assembly indexed for [BWA](https://github.com/lh3/bwa) 0.7
 
