@@ -1,6 +1,6 @@
-# QuantSeq Flex ARTIC primer set for SARS-Cov2 genome sequencing
+# SARS-CoV-2 ARTIC Panel for Illumina
 
-This repository contains resources and information related to the [QuantSeq Flex ARTIC primer set](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/). The primers in this set are based on the published, improved sequences ([version N1](https://github.com/ItokawaK/Alt_nCov2019_primers/tree/master/Primers/ver_N1)) by [Itokawa et. al 2020](https://doi.org/10.1371/journal.pone.0239403). 
+This repository contains resources and information related to the [SARS-CoV-2 ARTIC Panel for Illumina](https://www.lexogen.com/sars-cov-2-whole-genome-sequencing-artic-panel/). The primers in this set are based on the published, improved sequences ([version N1](https://github.com/ItokawaK/Alt_nCov2019_primers/tree/master/Primers/ver_N1)) by [Itokawa et. al 2020](https://doi.org/10.1371/journal.pone.0239403). 
 
 See this [this github repository](https://github.com/ItokawaK/Alt_nCov2019_primers) for more information and the original sequences.
 
